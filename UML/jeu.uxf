@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>500</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Resource
+--
+id:int
+idPlayer:int
+water: int
+scrap: int
+food: int
+energy:int
+--
+Use(value:int,type:enum):void;
+get(value:int,type:enum):void;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>160</y>
+      <w>210</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Hospital
+--
+enumStade: ?;
+--
+Dorearch()?
+doVaccination();
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>30</y>
+      <w>210</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>player
+--
+id: int
+name:string
+isReal: bool
+popMax:int
+popularity:int
+destructible:boolean
+isAlive: boolean;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>340</y>
+      <w>210</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Amelioration
+--
+id:int
+prerequisite :Array List
+name: string
+cost: int
+typeCost:array int
+searchTime: int;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>940</x>
+      <y>60</y>
+      <w>210</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>Unity
+--
+id:int
+idplayer;
+idCase;
+nom: string
+pv:string;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>510</y>
+      <w>210</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Population
+--
+hapiness:int
+hope:int
+security:int
+idProfile:int 
+idPlayer:int 
+number:int
+--
+get/set </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>660</x>
+      <y>100</y>
+      <w>210</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>map
+--
+id:int
+length:int;
+width:int;
+case: array case
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>620</x>
+      <y>280</y>
+      <w>210</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Event
+--
+idEvent: int
+nom: string
+chance: float
+--
+Effet():abstarct
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>480</y>
+      <w>210</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Profil
+--
+idProfil: int
+loveBuilding: array building;
+loveEvent:array Event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>850</x>
+      <y>330</y>
+      <w>210</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>case
+--
+idcase: int
+Ressource :Ressource
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>320</x>
+      <y>190</y>
+      <w>210</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Building
+--
+id: int
+idCase:int
+width:int;
+length:int;
+pv:int
+destructible:boolean
+name: string
+cost:Ressource;
+idDistrinct: int
+idPlayer: int
+--
+destroy(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>180</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.
+&lt;&lt;extend&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>830</x>
+      <y>540</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>_Tornado_
+--
+damage:int;
+--
+Effect();</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>790</x>
+      <y>430</y>
+      <w>120</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;70.0;110.0</additional_attributes>
+  </element>
+</diagram>
