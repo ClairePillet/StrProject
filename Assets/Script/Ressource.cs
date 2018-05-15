@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ressource {
+public class Ressource: MonoBehaviour {
 
     private int id;
     private int idPlayer;

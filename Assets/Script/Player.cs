@@ -60,7 +60,7 @@ namespace Assets.Script
         }
         public void setPopMax(int popMax)
         {
-            this.popMax = popMax;
+            this.popMax += popMax;
         }
         public int getPopularity()
         {
@@ -68,7 +68,7 @@ namespace Assets.Script
         }
         public void setPopularity(int popularity)
         {
-            this.popularity = popularity;
+            this.popularity += popularity;
         }
     }
 }
