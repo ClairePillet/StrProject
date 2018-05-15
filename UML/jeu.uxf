@@ -71,7 +71,6 @@ isAlive: boolean;</panel_attributes>
 id:int
 prerequisite :Array List
 name: string
-cost: int
 typeCost:array int
 searchTime: int;</panel_attributes>
     <additional_attributes/>
@@ -80,17 +79,17 @@ searchTime: int;</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>940</x>
-      <y>60</y>
+      <y>70</y>
       <w>210</w>
       <h>240</h>
     </coordinates>
-    <panel_attributes>Unity
+    <panel_attributes>Units
 --
 id:int
 idplayer;
 idCase;
 nom: string
-pv:string;
+pv:int;
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -127,7 +126,7 @@ get/set </panel_attributes>
 id:int
 length:int;
 width:int;
-case: array case
+case: array caseMap
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -139,7 +138,7 @@ case: array case
       <w>210</w>
       <h>160</h>
     </coordinates>
-    <panel_attributes>Event
+    <panel_attributes>EventGame
 --
 idEvent: int
 nom: string
@@ -162,7 +161,7 @@ Effet():abstarct
 --
 idProfil: int
 loveBuilding: array building;
-loveEvent:array Event</panel_attributes>
+loveEvent:array EventGame</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -173,7 +172,7 @@ loveEvent:array Event</panel_attributes>
       <w>210</w>
       <h>160</h>
     </coordinates>
-    <panel_attributes>case
+    <panel_attributes>caseMap
 --
 idcase: int
 Ressource :Ressource
